@@ -1,7 +1,11 @@
 import time
 import numpy as np
 import yaml
+
+
 from model.daq.analog_daq import AnalogDaq
+
+from model.daq.dummy_daq import DummyDaq
 
 from model import ur
 
@@ -17,7 +21,16 @@ class IVExperiment:
     def load_daq(self):
         port = self.params['Params']['port']
         resistance = ur(self.params['Params']['resistance'])
-        self.daq = AnalogDaq(port, resistance)
+
+
+        if self.params['Params']['device_type'] == 'real':
+            self.daq = AnalogDaq(port, resistance)
+        elif self.params ['Params']['device_type'] == 'dummy':
+            self.daq = DummyDaq(port,resistance)
+        else:
+            raise Exception ('Daq Device not recognized')
+
+
 
     def do_scan(self):
         if self.scan_running:

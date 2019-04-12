@@ -3,7 +3,9 @@ User:
 
 Params:
   resistance: 100ohm
-  port: /dev/ttyACM0  # COM3  COM5....
+  port: /dev/cu.usbmodem14301  # COM3  COM5....
+  device_type: dummy #(Or real) python -m serial.tools.list_ports
+
 
 Scan:
   start: 0V
