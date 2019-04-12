@@ -3,9 +3,9 @@ import time
 import numpy as np
 import yaml
 
-
+from datetime import datetime
+from PyQt5.QtWidgets import QMessageBox
 from model.daq.analog_daq import AnalogDaq
-
 from model.daq.dummy_daq import DummyDaq
 
 from model import ur
@@ -64,27 +64,38 @@ class IVExperiment:
     def save_data(self, filename=None):
 
         if not hasattr(self, 'currents'):
-            print ('Still no currents acquired')
+            message_box = QMessageBox()
+            message_box.setText('No currents to save')
+            message_box.exec()
             return
-
-
 
         if not isinstance(filename, str):
 
-            if not os.path.isdir(self.params['Saving']['path']):
-                os.makedirs(self.params['Saving']['path'])
+            folder_name = '{:%Y-:%m:-%d}'.format(datetime.now())
+            final_folder = os.path.join(self.params['Saving']['path'],folder_name)
 
 
-            fname = self.params['Saving']['filename']
+            if not os.path.isdir(final_folder):
+                os.makedirs(final_folder)
 
-            i=0
+            ts = time.time()
+            st = datetime.fromtimestamp(ts).strftime('Time_%H_%M_%S')
+            fname = self.params['Saving']['filename'] + '__' + st
 
-            while os.path.exists(os.path.join(self.params['Saving']['path'], fname)):
-                fname = self.params['Saving']['filename']+str(i)
-                i = i+1
 
-            filename = os.path.join(self.params['Saving']['path'], fname)
-            
+
+            #i=0
+
+            #while os.path.exists(os.path.join(final_folder, fname)):
+            #
+            # fname = self.params['Saving']['filename']+'__'+str(i)
+
+
+            filename = os.path.join(final_folder, fname)
+
+
+
+
         np.savetxt(filename, self.currents)
         time.sleep(0.5)
 
