@@ -61,14 +61,32 @@ class IVExperiment:
     def plot_data(self):
         pass
 
-    def save_data(self, filename = None):
-        if filename is None:
+    def save_data(self, filename=None):
+
+        if not hasattr(self, 'currents'):
+            print ('Still no currents acquired')
+            return
+
+
+
+        if not isinstance(filename, str):
+
             if not os.path.isdir(self.params['Saving']['path']):
                 os.makedirs(self.params['Saving']['path'])
-                
 
 
+            fname = self.params['Saving']['filename']
+
+            i=0
+
+            while os.path.exists(os.path.join(self.params['Saving']['path'], fname)):
+                fname = self.params['Saving']['filename']+str(i)
+                i = i+1
+
+            filename = os.path.join(self.params['Saving']['path'], fname)
+            
         np.savetxt(filename, self.currents)
+        time.sleep(0.5)
 
     def save_plot(self, filename):
         pass
