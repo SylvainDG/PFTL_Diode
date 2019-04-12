@@ -4,10 +4,6 @@
     <list default="true" id="d67718e0-ccee-4566-9ce1-e363f7867c8d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/LMU_04_19/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/LMU_04_19/model/daq/dummy_daq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IV_data" beforeDir="false" afterPath="$PROJECT_DIR$/IV_data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IV_data0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IV_data1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IV_data2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LMU_04_19/Config/experiment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/LMU_04_19/Config/experiment.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMU_04_19/view/scan_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMU_04_19/view/scan_window.py" afterDir="false" />
@@ -32,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LMU_04_19/view/scan_window.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            <state relative-caret-position="182">
+              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -44,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="-75">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -106,8 +102,8 @@
         <option value="$PROJECT_DIR$/LMU_04_19/model/dummy_daq.py" />
         <option value="$PROJECT_DIR$/LMU_04_19/model/daq/dummy_daq.py" />
         <option value="$PROJECT_DIR$/LMU_04_19/Config/experiment.yml" />
-        <option value="$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py" />
         <option value="$PROJECT_DIR$/LMU_04_19/view/scan_window.py" />
+        <option value="$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py" />
       </list>
     </option>
   </component>
@@ -247,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555071895644</updated>
       <workItem from="1555071898603" duration="1048000" />
-      <workItem from="1555072986464" duration="3956000" />
+      <workItem from="1555072986464" duration="4427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5004000" />
+    <option name="totallyTimeSpent" value="5475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -332,22 +328,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py">
+    <entry file="file://$PROJECT_DIR$/LMU_04_19/view/scan_window.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="182">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LMU_04_19/view/scan_window.py">
+    <entry file="file://$PROJECT_DIR$/LMU_04_19/model/experiment/IV_measurement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        <state relative-caret-position="-75">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

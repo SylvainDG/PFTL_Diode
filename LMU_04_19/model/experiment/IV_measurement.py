@@ -71,7 +71,7 @@ class IVExperiment:
 
         if not isinstance(filename, str):
 
-            folder_name = '{:%Y-:%m:-%d}'.format(datetime.now())
+            folder_name = '{:%Y-%m-%d}'.format(datetime.now())
             final_folder = os.path.join(self.params['Saving']['path'],folder_name)
 
 
