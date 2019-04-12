@@ -37,7 +37,6 @@ class ScanWindow(QMainWindow):
         layout = self.centralwidget.layout()
         layout.addWidget(self.plot_widget)
 
-        assert isinstance(self.experiment.save_data, object)
         self.action_Save.triggered.connect(self.experiment.save_data)
 
     def update_start_button(self):

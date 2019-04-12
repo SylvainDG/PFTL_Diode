@@ -1,3 +1,4 @@
+import os
 import time
 import numpy as np
 import yaml
@@ -60,7 +61,13 @@ class IVExperiment:
     def plot_data(self):
         pass
 
-    def save_data(self, filename):
+    def save_data(self, filename = None):
+        if filename is None:
+            if not os.path.isdir(self.params['Saving']['path']):
+                os.makedirs(self.params['Saving']['path'])
+                
+
+
         np.savetxt(filename, self.currents)
 
     def save_plot(self, filename):

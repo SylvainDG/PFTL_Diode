@@ -15,3 +15,7 @@ Scan:
   channel_in: 0
   channel_out: 0
 
+
+Saving:
+  filename: IV_data
+  path : /users/sylvaingennaro/PycharmProjects/LMU_04_19/
